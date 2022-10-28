@@ -1,0 +1,22 @@
+{
+  "build" : {
+    "-resource" : [
+      "tests.pml@tests",
+      "src/main/resource/stx.pml@stx",
+      "src/main/resource/stx_key_val.pml@stx_key_val",
+      "src/main/resource/stx_flag.pml@stx_flag",
+      "src/main/resource/stx_flag_fail.pml@stx_flag_fail",
+      "src/main/resource/stx_build_section.pml@stx_build_section",
+      "src/main/resource/stx_build.pml@stx_build"
+    ],
+    "-D"   : ["no-deprecation-warnings"],
+    "-p"   : ["src/main/haxe"],
+    "-lib" : ["stx_pico","stx_nano","stx_test","stx_show","stx_ds","stx_assert"],
+    "test" : {
+      "-main"   : "stx.build.Test",
+      "interp"  : {
+        "--interp" : true
+      }
+    }
+  }
+}
