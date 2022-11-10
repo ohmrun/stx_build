@@ -5,7 +5,7 @@ import eu.ohmrun.pml.Extract.*;
 /**
   Lexer from pml expressions to haxe compiler tokens
 **/
-class Lexer extends TestCase{
+class Lexer{
   public function e(){
     return Extract;
   }

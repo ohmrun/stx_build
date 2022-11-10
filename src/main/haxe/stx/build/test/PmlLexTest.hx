@@ -6,7 +6,9 @@ import eu.ohmrun.pml.Extract.*;
 using stx.Parse;
 using eu.ohmrun.Pml;
 
-import stx.build.term.haxe.Lexer;
+import stx.build.term.haxe.Token;
+import stx.build.term.haxe.*;
+
 
 class PmlLexTest extends TestCase{
   public function test(){
@@ -55,14 +57,14 @@ class PmlLexTest extends TestCase{
   public function test_path(){
     final value   = __.pml().parseI()(__.resource("stx").string().reader());
     final result  = value.value.defv(PEmpty);
-    final parse   = Lexer.main();
+    final parse   = stx.build.term.haxe.Lexer.main();
     try{
       final out     = parse.apply([result].reader());
       final a       = out.value.defv([].imm());
       trace(__.show(a));
-      final b       = HaxeBuildTokenLift.apply(a,["unit"]);
+      final b       = Interpreter.apply(a,["unit"]);
       for(o in b){
-        for( x in o){
+        for( x in o ){
           x.decouple(
             (key,val) -> trace('$key => $val')
           );
@@ -71,5 +73,8 @@ class PmlLexTest extends TestCase{
     }catch(e){
       trace(e);
     }
+  }
+  public function test_whole(){
+    Execution.upply(["unit"]);
   }
 }

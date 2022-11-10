@@ -1,0 +1,161 @@
+Building... /mnt/dat/lib/haxe/haxe-files/2,0,0/src/hx/files/internal/Macros.hx:38: [INFO] Setting compiler define 'filesystem_support'.
+/mnt/dat/lib/haxe/haxe-concurrent/git/src/hx/concurrent/internal/Macros.hx:35: [INFO] Setting compiler define 'threads'.
+/mnt/dat/prj/haxe/stx/stx_log/src/main/haxe/stx/log/logger/Global.hx:10: stx.Log.global = stx.log.logger.ConsoleLogger()
+/mnt/dat/prj/haxe/stx/stx_makro/src/main/haxe/stx/makro/Plugin.hx:17: stx.makro.Plugin.use
+INFO 2022-11-03 11:58:40 []  stx.bake.Plugin.use
+stx/log/logger/Global.hx:10: stx.Log.global = stx.log.logger.ConsoleLogger()
+src/main/haxe/stx/build/Test.hx:24: Interp
+TRACE 2022-11-03 11:58:44 [stx/stream] stx/Stream.hx:172 TestCaseData(stx.build.test.HaxeProcessClientTest)
+> 		stx.build.test.HaxeProcessClientTest
+TRACE 2022-11-03 11:58:44 [stx/stream] stx/Stream.hx:172 MethodCall(stx.build.test.HaxeProcessClientTesttest)
+> 			stx.build.test.HaxeProcessClientTest::test
+DEBUG 2022-11-03 11:58:44 [stx/io] stx/io/process/server/term/Impl.hx:18 haxe --help
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/fletcher/Execute.hx:63 execute environment (stx.build.test.HaxeProcessClientTest.test@29)
+eu/ohmrun/Fletcher.hx:121: environment: (stx.build.test.HaxeProcessClientTest.test@29)
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/Fletcher.hx:126 fiber (stx.build.test.HaxeProcessClientTest.test@29)
+INFO 2022-11-03 11:58:44 [stx/stream] stx/stream/Cycle.hx:159 cycle/submit: Cycle(true) (eu.ohmrun.fletcher._Fiber.Fiber_Impl_.submit@21)
+stx/proxy/core/Agenda.hx:61: handler: Defer(eu.ohmrun.fletcher.term.Anon)
+eu/ohmrun/Fletcher.hx:121: environment: (stx.proxy.core.AgendaExecute.handler@68)
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/Fletcher.hx:126 fiber (stx.proxy.core.AgendaExecute.handler@68)
+src/main/haxe/stx/build/test/HaxeProcessClientTest.hx:13: PResState({status: Io_Process_Init, stderr: Io_Input_Unknown, stdout: Io_Input_Unknown, exit_code: None})
+src/main/haxe/stx/build/test/HaxeProcessClientTest.hx:14: Defer(eu.ohmrun.fletcher.term.Anon)
+stx/proxy/core/Agenda.hx:61: handler: Defer(eu.ohmrun.fletcher.term.Anon)
+eu/ohmrun/Fletcher.hx:121: environment: (stx.proxy.core.AgendaExecute.handler@68)
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/Fletcher.hx:126 fiber (stx.proxy.core.AgendaExecute.handler@68)
+stx/stream/scheduler/Tink.hx:12: Cycle(true)
+TRACE 2022-11-03 11:58:44 [stx/stream] stx/stream/Timeout.hx:6 timeout#fdb2: null
+stx/test/Module.hx:89: Happened
+src/main/haxe/stx/build/test/HaxeProcessClientTest.hx:20: Await(PReqState(false),#fun)
+stx/proxy/core/Agenda.hx:61: handler: Defer(eu.ohmrun.fletcher.term.Anon)
+eu/ohmrun/Fletcher.hx:121: environment: (stx.proxy.core.AgendaExecute.handler@68)
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/Fletcher.hx:126 fiber (stx.proxy.core.AgendaExecute.handler@68)
+stx/proxy/core/Agenda.hx:61: handler: Defer(eu.ohmrun.fletcher.term.Anon)
+eu/ohmrun/Fletcher.hx:121: environment: (stx.proxy.core.AgendaExecute.handler@68)
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/Fletcher.hx:126 fiber (stx.proxy.core.AgendaExecute.handler@68)
+TRACE 2022-11-03 11:58:44 [stx/io] stx/io/process/server/term/Impl.hx:83 PReqState(false)
+stx/proxy/core/Agenda.hx:61: handler: Defer(eu.ohmrun.fletcher.term.Anon)
+eu/ohmrun/Fletcher.hx:121: environment: (stx.proxy.core.AgendaExecute.handler@68)
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/Fletcher.hx:126 fiber (stx.proxy.core.AgendaExecute.handler@68)
+stx/proxy/core/Agenda.hx:61: handler: Ended(Tap)
+stx/proxy/core/Agenda.hx:53: Happened
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/Fletcher.hx:132 fiber:lifted (stx.build.test.HaxeProcessClientTest.test@29)
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/fletcher/Execute.hx:74 report
+src/main/haxe/stx/build/test/HaxeProcessClientTest.hx:37: done
+TRACE 2022-11-03 11:58:44 [eu/ohmrun/fletcher] eu/ohmrun/Fletcher.hx:132 fiber:lifted (stx.build.test.HaxeProcessClientTest.test@29)
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:134: characters 21-26 : Uncaught exception Stack
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/AnonAnon.hx:9: characters 12-27 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:54: characters 13-47 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Map.hx:9: characters 27-43 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:147: characters 26-32 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/AnonAnon.hx:9: characters 12-27 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Map.hx:8: lines 8-10 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:54: characters 13-47 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:82: characters 14-25 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:62: characters 15-27 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/Receiver.hx:99: characters 27-36 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/Outcome.hx:31: characters 43-48 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/Receiver.hx:99: characters 27-36 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:97: characters 40-48 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Lazy.hx:106: characters 18-21 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Lazy.hx:13: characters 5-19 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:432: characters 15-20 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:227: lines 227-229 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:72: characters 24-34 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/AnonAnon.hx:9: characters 12-27 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:227: lines 227-229 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Map.hx:9: characters 27-43 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:76: characters 21-43 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Anon.hx:9: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Map.hx:8: lines 8-10 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:227: lines 227-229 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/term/Anon.hx:11: characters 12-26 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:64: lines 64-75 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Anon.hx:9: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/Receiver.hx:77: lines 77-92 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Anon.hx:9: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:198: lines 198-201 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/term/Anon.hx:11: characters 12-26 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:128: lines 128-150 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:68: lines 68-77 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/AnonAnon.hx:9: characters 12-27 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:124: lines 124-152 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/term/Anon.hx:11: characters 12-26 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:68: lines 68-77 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:62: characters 15-27 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/Receiver.hx:99: characters 27-36 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/Outcome.hx:31: characters 43-48 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/Receiver.hx:99: characters 27-36 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:97: characters 40-48 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Lazy.hx:106: characters 18-21 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Lazy.hx:13: characters 5-19 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:432: characters 15-20 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:227: lines 227-229 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:72: characters 24-34 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/AnonAnon.hx:9: characters 12-27 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:227: lines 227-229 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Map.hx:9: characters 27-43 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:76: characters 21-43 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Anon.hx:9: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Map.hx:8: lines 8-10 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:227: lines 227-229 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/term/Anon.hx:11: characters 12-26 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:64: lines 64-75 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Anon.hx:9: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/Receiver.hx:77: lines 77-92 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/Anon.hx:9: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:198: lines 198-201 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/term/Anon.hx:11: characters 12-26 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:128: lines 128-150 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/apply/term/Anon.hx:10: characters 12-21 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:68: lines 68-77 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/core/cont/term/AnonAnon.hx:9: characters 12-27 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:124: lines 124-152 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/term/Anon.hx:11: characters 12-26 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:68: lines 68-77 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Agenda.hx:62: characters 15-27 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/Receiver.hx:99: characters 27-36 : Called from here
+/mnt/dat/prj/haxe/stx/stx_pico/src/main/haxe/stx/pico/Outcome.hx:31: characters 43-48 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/fletcher/Receiver.hx:99: characters 27-36 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:98: characters 71-75 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Callback.hx:231: characters 11-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:474: characters 9-28 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:227: lines 227-229 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Callback.hx:231: characters 11-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:523: characters 9-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:537: characters 24-34 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:98: characters 71-75 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Callback.hx:231: characters 11-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:474: characters 9-28 : Called from here
+/mnt/dat/prj/haxe/fletcher/src/main/haxe/eu/ohmrun/Fletcher.hx:227: lines 227-229 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Callback.hx:231: characters 11-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:523: characters 9-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:537: characters 24-34 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:98: characters 71-75 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Callback.hx:231: characters 11-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:474: characters 9-28 : Called from here
+/mnt/dat/prj/haxe/stx/stx_proxy/src/main/haxe/stx/proxy/core/Belay.hx:16: characters 17-51 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Callback.hx:231: characters 11-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:523: characters 9-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:537: characters 24-34 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:98: characters 71-75 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Callback.hx:231: characters 11-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:523: characters 9-32 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:537: characters 24-34 : Called from here
+/mnt/dat/lib/haxe/tink_core/git/src/tink/core/Future.hx:376: characters 76-87 : Called from here
+/usr/local/share/haxe/std/haxe/Timer.hx:149: characters 4-7 : Called from here
+/usr/local/share/haxe/std/haxe/Timer.hx:81: characters 45-55 : Called from here
+/usr/local/share/haxe/std/eval/_std/sys/thread/EventLoop.hx:26: characters 3-10 : Called from here
+/usr/local/share/haxe/std/eval/_std/sys/thread/EventLoop.hx:132: characters 3-29 : Called from here
+/usr/local/share/haxe/std/eval/_std/sys/thread/Thread.hx:103: characters 3-36 : Called from here
+failed
+Build completed with 0 successes and 1 failures.
+error: Recipe `test-interp` failed on line 3 with exit code 1
