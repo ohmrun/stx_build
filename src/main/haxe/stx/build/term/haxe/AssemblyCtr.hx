@@ -8,7 +8,7 @@ class AssemblyCtr{
         case true  : 
           Some(
             (expr:PExpr<Atom>,path:Cluster<String>) -> {
-              trace(expr);
+              __.log().trace('$expr');
               final result = stx.build.term.haxe.Lexer.main().apply([expr].reader());
               final output = 
                 result.toRes()

@@ -85,7 +85,7 @@ class Lexer{
   }
   static public function item():Parser<PExpr<Atom>,Cluster<Token>>{
     return 
-      haxe_flag().then(x -> [x].imm()).inspect(x -> trace(x),x -> trace(x))
+      haxe_flag().then(x -> [x].imm())//.inspect(x -> trace(x),x -> trace(x))
       .or(haxe_property_list())
       .or(haxe_property().then(x -> [x].imm()))
       .or(section.cache().then(x -> [x].imm()));

@@ -20,17 +20,18 @@ class Test{
       );
     }
     final log = __.log().global; 
-          // log.includes.push("stx/stream/debug");
+          log.includes.push("stx/asys");
           //log.includes.push("stx/stream");
           //log.includes.push("stx/test");
           //log.includes.push("stx/pico");
           //log.includes.push("stx/logging");
           log.includes.push('stx/build');
-          //log.includes.push('stx/io');
+          log.includes.push('stx/io');
           //log.includes.push('eu/ohmrun/fletcher');
           //log.includes.push('stx/proxy');
+          //log.includes.push('stx/pico');
           //log.includes.push("**/*");
-          log.level = TRACE;
+          log.level = DEBUG;
     __.test().auto();
   }
 }

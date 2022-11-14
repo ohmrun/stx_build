@@ -5,6 +5,7 @@ import stx.build.term.haxe.HaxeProcessClientCtr;
 
 class HaxeProcessClientTest extends TestCase{
   @stx.test.async
+  @timeout(10000)
   public function test(async:Async){
     final server = Server.lift(ProcessServer.make(['haxe','--help']));
     final client = HaxeProcessClientCtr.make();
@@ -24,29 +25,11 @@ class HaxeProcessClientTest extends TestCase{
               })
             );
           default           :
-          __.ended(__.fault().of(E_Process_Unsupported('UNIMPLEMENTED')));
+            __.ended(__.fault().of(E_Process_Unsupported('UNIMPLEMENTED')));
         }
       }).bind(client)
     );
     var done = false;
-    // function handler(x){
-    //   trace(x);
-    //   switch(x){
-    //     case Defer(x) : 
-    //       x.prj().environment(
-    //         Noise,
-    //         handler,
-    //         (_) -> {}
-    //       ).submit();
-    //     default : trace(x);
-    //   }
-    // }
-    // final agenda = proxy.agenda(
-    //   (_) -> {
-    //     trace('TEST DONE');       
-    //   }
-    // );
-    //handler(agenda);
     proxy.agenda(
       (_) -> {
         trace('TEST DONE');       
@@ -55,7 +38,7 @@ class HaxeProcessClientTest extends TestCase{
      .environment(
       () -> {
         if(!done){
-          pass();
+          trace ('done');
           async.done();
           done = true;
         }else{

@@ -1,4 +1,4 @@
-# Haxe project
+# stx_build
 
 This is an example Haxe project scaffolded by Visual Studio Code.
 

@@ -11,9 +11,9 @@ class Interpreter{
       function ( obj : Res<AccumState,BuildFailure> ) : Option<Couple<Res<AccumState,BuildFailure>, Res<Args,BuildFailure>>> {
         return obj.fold(
           (ok:AccumState) -> {
-            trace(__.show(ok.tokens));
+            __.log().trace(__.show(ok.tokens));
             function get_tokens(){
-              trace(ok.tokens);
+              __.log().trace('${ok.tokens}');
               return ok.tokens.map_filter(
                 x -> switch((x)){
                   case HTArg(k,v)   : Some(__.couple(k,v));
@@ -38,7 +38,7 @@ class Interpreter{
             return ok.path.head().fold(
               node -> {
                 final then = get_level(node);
-                trace('level $node $then');
+                __.log().trace('level $node $then');
                 return then.map(
                   level -> {
                     tokens : level,
@@ -51,7 +51,7 @@ class Interpreter{
               },
               () -> {
                 final tokens = get_tokens();
-                trace(tokens);
+                __.log().trace('$tokens');
                 return if(ok.tokens.is_defined()){
                   Some(__.couple(__.accept({ path : [].imm(), tokens : [].imm() }), __.accept(tokens)));
                 }else{
