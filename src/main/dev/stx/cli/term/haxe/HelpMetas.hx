@@ -1,4 +1,4 @@
-package stx.cli.term.haxe;
+package stx.sys.cli.term.haxe;
 
 class HelpMetas extends OptionLongSpec{
   public function new(){

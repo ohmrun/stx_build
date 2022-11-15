@@ -1,4 +1,4 @@
-package stx.cli.term.haxe;
+package stx.sys.cli.term.haxe;
 
 class Define extends PropertyDefaultSpec{
   public function new(){

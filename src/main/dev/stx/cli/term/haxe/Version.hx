@@ -1,4 +1,4 @@
-package stx.cli.term.haxe;
+package stx.sys.cli.term.haxe;
 
 class Version extends OptionLongSpec{
   public function new(){

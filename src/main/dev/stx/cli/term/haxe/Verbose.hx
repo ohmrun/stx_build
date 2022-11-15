@@ -1,4 +1,4 @@
-package stx.cli.term.haxe;
+package stx.sys.cli.term.haxe;
 
 class Verbose extends FlagDefaultSpec{
   public function new(){
