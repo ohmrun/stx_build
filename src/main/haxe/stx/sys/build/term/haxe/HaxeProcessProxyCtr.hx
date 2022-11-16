@@ -1,5 +1,8 @@
 package stx.sys.build.term.haxe;
 
+/**
+  Haxe Process Proxy
+**/
 class HaxeProcessProxyCtr{
   static public function make(args:Cluster<String>):Agenda<BuildFailure>{
     final server = Server.lift(ProcessServer.make(['haxe'].imm().concat(args)));
@@ -25,8 +28,8 @@ class HaxeProcessProxyCtr{
         }
       }).bind(client)
     ).agenda(
-      (x) -> {}
+      (x) -> {}//Returns Noise so
     ).errate(E_Build_Process));
-    return $type(proxy);
+    return proxy;
   }
 }

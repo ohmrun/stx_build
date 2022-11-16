@@ -75,6 +75,6 @@ class PmlLexTest extends TestCase{
     }
   }
   public function test_whole(){
-    Execution.upply(["unit"]);
+    //Execution.upply(["unit"])
   }
 }

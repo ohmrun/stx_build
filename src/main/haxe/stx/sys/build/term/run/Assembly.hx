@@ -1,14 +1,14 @@
 package stx.sys.build.term.run;
 
-class Assembly extends stx.sys.build.Assembly{
-  static public function apply(name:String){
-    return switch(name == 'run'){
-      case true  : Some(
-        function(expr:PExpr<Atom>,path:Cluster<String>):Execute<BuildFailure>>{
-          
-        }
-      );
-      case false : None;
-    }
+class Assembly implements stx.sys.build.AssemblyApi{
+  public final name     : String;
+  public final spec     : Spec;
+    
+  public function new(){
+    this.name     = 'run';
+    this.spec     = stx.sys.build.term.run.Spec.reply();
+  }
+  public function apply(ctx:AssemblyContext){
+    return Agenda.lift(__.ended(End(__.fault().of(E_Cli_NoImplementation))));
   }
 }

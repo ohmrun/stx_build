@@ -8,6 +8,7 @@ enum BuildFailureSum{
   E_Build_Fs(f:FsFailure);
   E_Build_NoSection(name:String);
   E_Build_Process(f:ProcessFailure);
+  E_Build_Cli(f:CliFailure);
 }
 @:transitive abstract BuildFailure(BuildFailureSum) from BuildFailureSum to BuildFailureSum{
   public function new(self) this = self;
@@ -25,5 +26,8 @@ enum BuildFailureSum{
   }
   @:from static public function fromProcessFailure(f){
     return lift(E_Build_Process(f));
+  }
+  @:from static public function fromCliFailure(f){
+    return lift(E_Build_Cli(f));
   }
 }

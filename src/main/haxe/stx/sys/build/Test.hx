@@ -1,5 +1,7 @@
 package stx.sys.build;
 
+import stx.sys.build.Run;
+
 using stx.Test;
 
 import stx.sys.build.test.*;
