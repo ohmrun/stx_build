@@ -1,6 +1,6 @@
 package stx.sys.build;
 
-import stx.sys.build.Run;
+import stx.sys.build.Main;
 
 using stx.Test;
 

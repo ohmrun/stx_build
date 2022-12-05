@@ -1,0 +1,23 @@
+haxe \
+-lib tink_core \
+-lib tink_syntaxhub \
+-lib tink_concurrent \
+-lib tink_runloop \
+--macro "tink.runloop.Boot.boot()" \
+-cp src/main/haxe \
+-lib tink_core \
+-lib stx_pico \
+-lib stx_nano \
+-lib stx_test \
+-lib stx_show \
+-lib stx_ds \
+-lib stx_assert \
+-lib stx_bake  \
+-lib stx_asys  \
+-lib stx_log   \
+-lib stx_cli    \
+-D no-deprecation-warnings \
+--debug \
+-D stx.stream.switches.debug=true \
+--main stx.sys.build.Main \
+--interp
