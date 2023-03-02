@@ -1,7 +1,7 @@
-package stx.sys.build;
+package stx;
 
-typedef Assembly  = stx.sys.build.Assembly;
-typedef Execution = stx.sys.build.Execution;
+// typedef Assembly  = stx.sys.build.Assembly;
+// typedef Execution = stx.sys.build.Execution;
 
 class Build{
   static public function build(wildcard:Wildcard){

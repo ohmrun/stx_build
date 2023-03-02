@@ -66,7 +66,7 @@ class Execution{
     ).resolve(f -> f.of(E_Build_Fail('no arguments'))).flat_map(
       x -> switch(x){
         case Arg(x) : __.accept(x.split("/"));
-        default     : __.reject(f -> f.of(E_Build_Fail('wrong option type')))
+        default     : __.reject(f -> f.of(E_Build_Fail('wrong option type')));
       }
     );
   } 
