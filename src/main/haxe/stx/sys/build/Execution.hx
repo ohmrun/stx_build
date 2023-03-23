@@ -56,18 +56,18 @@ class Execution{
   //     () -> Execute.pure(__.fault().of(E_Build_NoRequest))
   //   );
 // }
-  function get_something(cli_ctx:CliContext){
-    final args = cli_ctx.args;
-    final path = args.search(
-      x -> switch(x){
-        case Arg(_) : true;
-        default     : false;
-      }
-    ).resolve(f -> f.of(E_Build_Fail('no arguments'))).flat_map(
-      x -> switch(x){
-        case Arg(x) : __.accept(x.split("/"));
-        default     : __.reject(f -> f.of(E_Build_Fail('wrong option type')));
-      }
-    );
-  } 
+  // function get_something(cli_ctx:CliContext){
+  //   final args = cli_ctx.args;
+  //   final path = args.search(
+  //     x -> switch(x){
+  //       case Arg(_) : true;
+  //       default     : false;
+  //     }
+  //   ).resolve(f -> f.of(E_Build_Fail('no arguments'))).flat_map(
+  //     x -> switch(x){
+  //       case Arg(x) : __.accept(x.split("/"));
+  //       default     : __.reject(f -> f.of(E_Build_Fail('wrong option type')));
+  //     }
+  //   );
+  // } 
 }

@@ -17,11 +17,12 @@ class StxPml{
     __.log().trace(str);
     return                 
     __.pml().parseI()(str.reader()).toRes()
+      .errate(e -> (e:BuildFailure))
       .flat_map(
         opt -> opt.fold(
-          ok -> __.accept(ok),
+          ok -> __.accept(ok).errate(e -> (e:BuildFailure)),
           () -> __.reject(f -> f.of(E_Build_EmptyBuildFile))
         )
-      ).errate(e -> (e:BuildFailure));
+      );
   }
 }

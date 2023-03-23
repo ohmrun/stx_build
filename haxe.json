@@ -12,7 +12,7 @@
     "-D"   : ["no-deprecation-warnings"],
     "-p"   : ["src/main/haxe"],
     "-lib" : [
-      "stx_pico","stx_nano","stx_test","stx_show","stx_ds",
+      "stx_pico","stx_nano","stx_show","stx_ds",
       "stx_assert","stx_bake","stx_asys","stx_show","stx_log","stx_cli",
       "tink_core","tink_macro","tink_runloop"
     ],
@@ -23,6 +23,8 @@
       "--main"  : "stx.sys.build.Main"
     },
     "test" : {
+      "-L"      :["stx_test"],
+      "-cp"     : "src/main/haxe",
       "--debug" : true,
       "-D"      : ["stx.stream.switches.debug=true","stx.parse.switches.debug=false"],
       "-main"   : "stx.sys.build.Test",
@@ -52,6 +54,9 @@
       "php" : {
         "--php" : "test.php"
       }
+    },
+    "unit" : {
+      "--macro" : ["include('stx.sys.build',true)"]
     }
   }
 }
