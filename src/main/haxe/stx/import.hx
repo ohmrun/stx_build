@@ -15,7 +15,7 @@ using stx.Log;
 using stx.Proxy;
 using stx.io.Process;
 using stx.ASys;
-using stx.Bake;
+using Bake;
 using stx.Fs;
 using stx.fs.Path;
 using eu.ohmrun.Pml;

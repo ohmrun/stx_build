@@ -27,7 +27,7 @@
         "stx_pkg"       : "",
         "stx_ds"        : "",
         "stx_assert"    : "",
-        "stx_bake"      : "",
+        "bake"      : "",
         "stx_asys"      : "",
         "stx_cli"       : ""
     },

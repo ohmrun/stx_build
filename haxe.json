@@ -13,7 +13,7 @@
     "-p"   : ["src/main/haxe"],
     "-lib" : [
       "stx_pico","stx_nano","stx_show","stx_ds",
-      "stx_assert","stx_bake","stx_asys","stx_show","stx_log","stx_cli",
+      "stx_assert","bake","stx_asys","stx_show","stx_log","stx_cli",
       "tink_core","tink_macro","tink_runloop"
     ],
     "run" : {
