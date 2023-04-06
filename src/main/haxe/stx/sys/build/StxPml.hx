@@ -8,7 +8,7 @@ class StxPml{
   }
   static public function content():Attempt<HasDevice,String,BuildFailure>{
     __.log().trace('content');
-    return (Path.parse(__.bake().root.toString())
+    return (Path.parse(Bake.pop().root.toString())
     .attempt(Raw._.toDirectory)
     .map((dir:Directory) -> dir.entry(Entry.make('stx','pml'))).errate((e) -> (e:FsFailure))
     .arrange(__.arrange((arc:Archive) -> arc.val())).errate(e -> (e:BuildFailure)));
