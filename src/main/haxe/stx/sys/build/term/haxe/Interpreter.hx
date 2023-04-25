@@ -8,7 +8,7 @@ class Interpreter{
   static public function apply(self:Cluster<Token>,path:Cluster<String>){
     return Iter.lift(Unfold.unfold(
       __.accept({ tokens : self, path : path }), 
-      function ( obj : Res<AccumState,BuildFailure> ) : Option<Couple<Res<AccumState,BuildFailure>, Res<Args,BuildFailure>>> {
+      function ( obj : Upshot<AccumState,BuildFailure> ) : Option<Couple<Upshot<AccumState,BuildFailure>, Upshot<Args,BuildFailure>>> {
         return obj.fold(
           (ok:AccumState) -> {
             __.log().trace(__.show(ok.tokens));
@@ -64,7 +64,7 @@ class Interpreter{
         );
       }
     )).lfold(
-      (next:Res<Args,BuildFailure>,memo:Res<Args,BuildFailure>) -> {
+      (next:Upshot<Args,BuildFailure>,memo:Upshot<Args,BuildFailure>) -> {
         return memo.zip(next).map(
           __.decouple((x:Args,y:Args) -> x.concat(y))
         );

@@ -16,7 +16,7 @@ class StxPml{
   static public function expression(str:String){
     __.log().trace(str);
     return                 
-    __.pml().parseI()(str.reader()).toRes()
+    __.pml().parseI()(str.reader()).toUpshot()
       .errate(e -> (e:BuildFailure))
       .flat_map(
         opt -> opt.fold(

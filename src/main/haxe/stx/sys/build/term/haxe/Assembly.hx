@@ -13,7 +13,7 @@ class Assembly implements stx.sys.build.AssemblyApi{
     final scope   = ctx.spec.rest;
     final path    = scope.flat_map(spec -> spec.args.head()).flat_map(opt -> opt.data).map(str -> str.split("/")).defv([]);
     final output  = 
-      result.toRes().errate(e -> (e:BuildFailure))
+      result.toUpshot().errate(e -> (e:BuildFailure))
             .adjust(
               opt -> opt.fold(
                 ok -> __.accept(ok),

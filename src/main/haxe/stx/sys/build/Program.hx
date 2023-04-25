@@ -20,7 +20,7 @@ class Program implements ProgramApi extends ProgramCls{
     this.spec         = spec;
     this.assemblies   = assemblies;
   }
-  public function apply(res:Res<CliContext,CliFailure>):Agenda<CliFailure>{
+  public function apply(res:Upshot<CliContext,CliFailure>):Agenda<CliFailure>{
     /**Get the specs from the assemblies.**/
     final next_spec = assemblies.lfold(
       (next:AssemblyApi,memo:Spec) -> memo.with_rest(map -> map.set(next.name,next.spec)),
@@ -33,7 +33,7 @@ class Program implements ProgramApi extends ProgramCls{
     );
   }
   private function comply(spec:Spec,ctx:CliContext):Agenda<CliFailure>{
-    final spec_value = (ctx.apply(spec).toRes())
+    final spec_value = (ctx.apply(spec).toUpshot())
     .errate(e -> (e:CliFailure))
     .fold(
       opt -> opt.fold(
