@@ -15,12 +15,12 @@ class Test{
     ];
   }
   static public function main(){
-    tink.RunLoop.current.onError = (e,t,w,s) -> {
-      trace(e);
-      haxe.MainLoop.runInMainThread(
-        () -> throw(e)
-      );
-    }
+    // tink.RunLoop.current.onError = (e,t,w,s) -> {
+    //   trace(e);
+    //   haxe.MainLoop.runInMainThread(
+    //     () -> throw(e)
+    //   );
+    // }
     final log = __.log().global; 
           log.includes.push("stx/asys");
           //log.includes.push("stx/stream");
