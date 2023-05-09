@@ -28,7 +28,7 @@ class HaxeProcessProxyCtr{
         }
       }).bind(client)
     ).agenda(
-      (x) -> {}//Returns Noise so
+      (x) -> {}//Returns Nada so
     ).errate(E_Build_Process));
     return proxy;
   }
