@@ -13,11 +13,11 @@ using stx.Assert;
 using stx.Log;
 
 using stx.Proxy;
-using stx.io.Process;
+using stx.asys.io.Process;
 using stx.ASys;
 using Bake;
-using stx.Fs;
-using stx.fs.Path;
+using stx.asys.Fs;
+using stx.asys.fs.Path;
 using eu.ohmrun.Pml;
 using eu.ohmrun.Fletcher;
 using stx.sys.Cli;

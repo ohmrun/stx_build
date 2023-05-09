@@ -1,6 +1,6 @@
 package stx.sys.build.test;
 
-using stx.io.Process;
+using stx.asys.io.Process;
 import stx.sys.build.term.haxe.HaxeProcessClientCtr;
 import stx.sys.build.term.haxe.HaxeProcessProxyCtr;
 
