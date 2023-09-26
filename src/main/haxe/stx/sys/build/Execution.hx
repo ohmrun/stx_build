@@ -33,7 +33,7 @@ class Execution{
   //                             case Some(v)  : Some(v);
   //                             default       : 
   //                               switch(next){
-  //                                 case PGroup(Cons(PValue(AnSym(x)),_)) if (x == ok): 
+  //                                 case PGroup(Cons(PValue(Sym(x)),_)) if (x == ok): 
   //                                   Some(assembly_ctr(expr,path));
   //                                 default : 
   //                                   None;//Execute.pure(__.fault().of(E_Build_Fail('$xs')));
