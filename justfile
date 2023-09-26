@@ -1,3 +1,3 @@
 default: test-interp
 test-interp: 
-  clear && hx build test/interp
+  clear && hb build test/interp
